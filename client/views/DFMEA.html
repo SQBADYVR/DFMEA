@@ -1,0 +1,41 @@
+<head>
+	<title>designCloud DFMEA:  Do your DFMEAs online, collaboratively, in real time.</title>
+</head>
+
+<body>
+   <div class="navbar navbar-static-top navbar-inverse">
+     <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">designCloud&#8482 DFMEA module</a>
+          <ul class="nav pull-right">
+            <li>
+              {{loginButtons align="right"}}
+            </li>
+          </ul>
+        </div>
+      </div>
+ 
+</div>
+ 
+    <div class="container" id="main">
+        {{> banner}}
+    </div>
+</body>
+ 
+<template name="banner">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <div class="well">
+                    <h4>Sign in to begin.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="hello">
+	<h1>designCloud DFMEA</h1>
+	{{greeting}}
+	<input type="button" value="Click" />
+</template>
