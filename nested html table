@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+table, th, td
+{
+border-collapse:collapse;
+border:1px solid black;
+}
+th, td
+{
+padding:1px;
+}
+</style>
+</head>
+
+<body>
+
+<h3>Cell that spans two columns:</h3>
+<table>
+<tr>
+  <th>Name</th>
+  <th colspan="2">Telephone</th>
+</tr>
+<tr>
+  <td>Bill Gates</td>
+  <td>555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<h3>Cell that spans two rows:</h3>
+<table>
+<tr>
+  <th>First Name:</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th rowspan="2">Telephone:</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
+<p></p>
+<table>
+<tr>
+<th rowspan="4">Function</th>
+<td><table>
+<tr>
+<th rowspan="3">Failure Mode 1</th>
+<td>Effect 1
+</td><td>SEV 4</td>
+<tr><td>Effect 2</td><td>SEV1</td></tr>
+<tr><td>Effect 3</td></tr>
+</tr>
+</table><tr><td><table>
+<tr>
+<th rowspan="3">Failure Mode 2</th>
+<td>Effect 1
+</td>
+<tr><td>Effect 2</td></tr>
+<tr><td>Effect 3</td></tr>
+</tr>
+</table>
+</td></tr>
+<tr><td><table>
+<tr>
+<th rowspan="3">Failure Mode 3</th>
+<td>Effect 1
+</td><td>SEV 4</td>
+<tr><td>Effect 2</td><td>SEV1</td></tr>
+<tr><td>Effect 3</td></tr>
+</tr>
+</table></td></tr>
+<tr><td><table>
+<tr>
+<th rowspan="1">Failure Mode 4</th>
+<td>Effect 1
+</td><td>SEV 4</td>
+
+</tr>
+</table></td></tr>
+</tr>
+</table>
+
+</body>
+</html>
