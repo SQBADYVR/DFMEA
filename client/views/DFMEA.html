@@ -13,21 +13,21 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="#">Action</a>
+								<a href="#">Recent Team 1</a>
 							</li>
 							<li>
-								<a href="#">Another action</a>
+								<a href="#">Recent Team 2</a>
 							</li>
 							<li>
-								<a href="#">Something else here</a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="#">Separated link</a>
+								<a href="#">Recent Team 3</a>
 							</li>
 							<li class="divider"></li>
 							<li>
-								<a href="#">One more separated link</a>
+								<a href="#">Choose existing team</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Create new team</a>
 							</li>
 						</ul>
 					</li>
@@ -36,17 +36,21 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#">Action</a>
+									<a href="#">Recent Project</a>
 								</li>
 								<li>
-									<a href="#">Another action</a>
+									<a href="#">Recent Project 2</a>
 								</li>
 								<li>
-									<a href="#">Something else here</a>
+									<a href="#">Recent Project 3</a>
 								</li>
 								<li class="divider"></li>
 								<li>
-									<a href="#">Separated link</a>
+									<a href="#">Select Project</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Create new Project</a>
 								</li>
 							</ul>
 						</li>
@@ -103,7 +107,7 @@
 		<div class="row-fluid">
 			<div class="span12">
 				FMEA Header Placeholder
-				{{> displayFunction}}
+				{{> displayFMEA}}
 				<!--<div class="span11">
 					<div class="row-fluid">
 						<div class = "span2">
@@ -287,14 +291,60 @@
 	<input type="button" value="Click" />
 </template>
 
+<template name="displayFMEA">
+	<!--{{getroot}}-->
+	{{>displayStuff}}
+</template>
+
+<template name="displayStuff">
+	{{#each node}}
+		{{#if parent_category}}
+				{{content}}
+		{{/if}}
+		{{#if rating_type}}
+			{{rating}}
+		{{/if}}
+		{{#if subcategories}}
+			{{> displayStuff}}
+		{{/if}}
+	{{/each}}
+</template>
+
+<!--
+<template name="displayCauses">
+	<div class="span11">
+		<div class="row-fluid">
+			<div class="span2">
+				{{#each designCauses}}
+				{{content}}
+				OCC{{rating}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="displayEffects">
+	<div class="span11">
+		<div class="row-fluid">
+			<div class="span2">
+				{{#each designEffects}}
+				{{content}}
+				SEV{{rating}}
+				{{> displayCauses}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>
+
 <template name="displayFModes">
 	<div class="span11">
 		<div class="row-fluid">
 			<div class="span2">
-				testing
 				{{#each designFModes}}
-				FMODE
-				{{designFMode}}>
+				{{content}}
+				{{> displayEffects}}
 				{{/each}}
 			</div>
 		</div>
@@ -302,14 +352,16 @@
 </template>
 
 <template name="displayFunction">
-	<div class="row-fluid">
-		<div class="span1">
-			
-			{{#each designFunctions}}
-			{{content}}
-			{{> displayFModes}}
-			{{/each}}
-		</div>
+	
+		{{#each foo 1}}
+	<div class="row-fluid">	<div class="span2">
+		{{content}}
 	</div>
+	<div class="span 10">
+		{{> displayFModes}}
+	</div>
+	</div>
+	{{/each}} 
 </template>
 
+-->
