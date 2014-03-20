@@ -113,14 +113,10 @@
 		</div>
 	</div>
 
-	
-	<body>
-		<div class="container-fluid" style="">
-
-			<div class="tree">
+	{{> displayFMEA}}
 				<ul>
 					<li>
-						<span><i class="icon-calendar"></i> 2013, Week 2</span>
+						<span><i class="icon-calendar"></i> Function 1</span>
 						<ul>
 							<li>
 								<span class="badge badge-success"><i class="icon-minus-sign"></i> Monday, January 7: 8.00 hours</span>
@@ -179,8 +175,6 @@
 						</ul>
 					</li>
 				</ul>
-
-			</div>
 	</body>
 
 <template name="banner">
@@ -203,35 +197,33 @@
 
 <template name="displayFMEA">
 	<!--{{getroot}}-->
-	<div class="container">
-		{{>displayStuff}}
-	</div>
+		<div class="container-fluid" style="">
+			<div class="tree">
+				{{>displayStuff}}
+			</div>
+		</div>
 </template>
 
 <template name="displayStuff">
 	{{#each node}}
-	{{#if NeedNewRow}}
-	<div class="block">
-		{{/if}}
 		{{#if parent_category}}
-		{{#if category_class}}
-		<div class={{category_class}}>
-			{{content}}
-		</div>
-		{{/if}}
+			<ul>
+				<li>
+					<span
+					{{#if category_class}} class={{category_class}}{{/if}}>
+					<i class="icon-calendar"></i>{{content}}</span>
 		{{/if}}
 		{{#if rating_type}}
-
-		<div class={{rating_type}}>
+		<span class={{rating_type}}>
 			{{rating}}
-		</div>
-
+		</span>
 		{{/if}}
 		{{#if subcategories}}
 		{{> displayStuff}}
 		{{/if}}
-		{{#if NeedNewRow}}
-	</div>
+	{{#if parent_category}}
+	</li>
+</ul>
 	{{/if}}
 	{{/each}}
 </template>
