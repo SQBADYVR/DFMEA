@@ -1,32 +1,62 @@
 /* CSS declarations go here */
-.Fctn {
-	width: 15%;
-};	
+.DET {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
+	border-bottom-right-radius: 20%;
+	border-top-right-radius: 20%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
-.Fmodes {
-	width: 15%;
-};	
-
-.Effects {
-	width: 15%;
-};
-
-.Causes {
-	width: 15%;
-};
-	
-.DesCntrls {
-	width: 15%;
-};
+.OCC {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 .SEV {
-	width: 5%;
-};
-
-.DET {
-	width:5%;};
-};
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
 	
-.OCC {
-	width:5%;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
+
+.DesCntrls {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
+	
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.Causes {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
+	border-bottom-left-radius: 20%;
+	border-top-left-radius: 20%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	
+}.Effects {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	width: 50px;
+	border-radius: 20%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+
