@@ -1,1 +1,32 @@
 /* CSS declarations go here */
+.Fctn {
+	width: 15%;
+};	
+
+.Fmodes {
+	width: 15%;
+};	
+
+.Effects {
+	width: 15%;
+};
+
+.Causes {
+	width: 15%;
+};
+	
+.DesCntrls {
+	width: 15%;
+};
+
+.SEV {
+	width: 5%;
+};
+
+.DET {
+	width:5%;};
+};
+	
+.OCC {
+	width:5%;
+}

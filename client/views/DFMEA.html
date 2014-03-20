@@ -107,6 +107,9 @@
 		<div class="row-fluid">
 			<div class="span12">
 				FMEA Header Placeholder
+			</div>
+		</div>
+		<div class="row-fluid">
 				{{> displayFMEA}}
 				<!--<div class="span11">
 					<div class="row-fluid">
@@ -299,10 +302,16 @@
 <template name="displayStuff">
 	{{#each node}}
 		{{#if parent_category}}
-				{{content}}
+
+		<div class={{category_class}}>
+			{{content}}
+
+		</div>
 		{{/if}}
 		{{#if rating_type}}
+		<div class={{rating_type}}>
 			{{rating}}
+		</div>
 		{{/if}}
 		{{#if subcategories}}
 			{{> displayStuff}}
