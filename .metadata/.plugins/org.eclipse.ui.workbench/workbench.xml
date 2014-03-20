@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="28" version="2.0">
 <workbenchAdvisor/>
 <window height="940" maximized="true" width="1200" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -17,6 +17,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="84" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -35,17 +36,17 @@
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.js" name="DFMEA.js" partName="DFMEA.js | server" title="DFMEA.js | server" tooltip="/home/twisted/meteor/DFMEA/server/DFMEA.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/twisted/meteor/DFMEA/server/DFMEA.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="188" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.css" name="bootstrap-tree.css" partName="bootstrap-tree.css" path="/home/twisted/meteor/bootstrap-tree/bootstrap-tree.css" title="bootstrap-tree.css" tooltip="bootstrap-tree/bootstrap-tree.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/bootstrap-tree/bootstrap-tree.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="31" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.js" name="DFMEA.js" partName="DFMEA.js | client" title="DFMEA.js | client" tooltip="/home/twisted/meteor/DFMEA/client/DFMEA.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/twisted/meteor/DFMEA/client/DFMEA.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="705" selectionTopPixel="0"/>
+<editor id="com.aptana.editor.js" name="bootstrap-tree.js" partName="bootstrap-tree.js" path="/home/twisted/meteor/bootstrap-tree/bootstrap-tree.js" title="bootstrap-tree.js" tooltip="bootstrap-tree/bootstrap-tree.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/bootstrap-tree/bootstrap-tree.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.html" name="DFMEA.html" partName="DFMEA.html" title="DFMEA.html" tooltip="/home/twisted/meteor/DFMEA/client/views/DFMEA.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/twisted/meteor/DFMEA/client/views/DFMEA.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7125" selectionTopPixel="4723"/>
+<editor id="com.aptana.editor.html" name="example.html" partName="example.html" path="/home/twisted/meteor/bootstrap-tree/example.html" title="example.html" tooltip="bootstrap-tree/example.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/bootstrap-tree/example.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8956" selectionTopPixel="2424"/>
 </editor>
 </editors>
 <views>
@@ -77,7 +78,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.editor.js" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.css" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -117,12 +118,12 @@
 <new_wizard_action id="org.radrails.rails.ui.projectWizard"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="com.aptana.terminal.views.terminal"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.aptana.samples.ui.SamplesView"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.aptana.terminal.views.terminal"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
 <fastViews>
@@ -133,7 +134,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="com.aptana.explorer.view" label="LabelNotFound"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
@@ -149,12 +150,17 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19983137" ratioLeft="237" ratioRight="949" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.74941176" ratioLeft="637" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@15824ca" ratio="0.74860954" ratioLeft="673" ratioRight="226" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal" label="twisted@Windu: ~"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -181,163 +187,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/DFMEA/server/DFMEA.js"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/DFMEA/client/DFMEA.js"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/home/twisted/meteor/DFMEA/client/views/DFMEA.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/home/twisted/meteor/todos/client/todos.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/home/twisted/meteor/leaderboard/leaderboard.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/leaderboard/leaderboard.js"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/todos/server/bootstrap.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/home/twisted/meteor/DFMEA/client/stylesheets/DFMEA.css"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/home/twisted/meteor/DFMEA/client/views/DFMEA.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/DFMEA/server/DFMEA.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/twisted/meteor/DFMEA/client/DFMEA.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/home/twisted/meteor/DFMEA/client/stylesheets/DFMEA.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/bootstrap-tree/bootstrap-tree.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/bootstrap-tree/bootstrap-tree.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/bootstrap-tree/bootstrap-tree.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/bootstrap-tree/bootstrap-tree2.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/bootstrap-tree/example.html"/>
 </editors>
-<item historyLabel="DFMEA.js | server" index="0">
+<item historyLabel="DFMEA.html" index="1">
+<position info="not_deleted" x="7125" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="655" y="0"/>
+</item>
+<item historyLabel="DFMEA.css" index="2">
+<position info="not_deleted" x="580" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="DFMEA.css" index="2">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7175" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7387" y="0"/>
+</item>
+<item historyLabel="DFMEA.css" index="2">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | server" index="4">
 <position info="not_deleted" x="188" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="705" y="0"/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7106" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="DFMEA.js | server" index="0">
+<item historyLabel="DFMEA.js | server" index="4">
 <position info="not_deleted" x="188" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7387" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7419" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7099" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | server" index="4">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1468" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7163" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1468" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | server" index="4">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1468" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7163" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | server" index="4">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7269" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7111" y="0"/>
+</item>
+<item historyLabel="DFMEA.css" index="2">
+<position info="not_deleted" x="100" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | server" index="4">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="DFMEA.js | client" index="0">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="7111" y="0"/>
+</item>
+<item historyLabel="DFMEA.js" index="5">
 <position/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
+<item historyLabel="DFMEA.html" index="3">
 <position/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
+<item historyLabel="DFMEA.js" index="5">
 <position/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
+<item historyLabel="DFMEA.css" index="6">
 <position/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
+<item historyLabel="DFMEA.js" index="5">
+<position info="not_deleted" x="941" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="676" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
+<item historyLabel="DFMEA.css" index="6">
 <position/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
+<item historyLabel="DFMEA.html" index="3">
+<position info="not_deleted" x="5835" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
+<item historyLabel="DFMEA.css" index="6">
+<position info="not_deleted" x="288" y="0"/>
 </item>
-<item historyLabel="leaderboard.html" index="4">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="leaderboard.js" index="5">
-<position info="not_deleted" x="447" y="0"/>
-</item>
-<item historyLabel="leaderboard.html" index="4">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="bootstrap.js" index="6">
+<item historyLabel="bootstrap-tree.css" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
+<item historyLabel="bootstrap-tree.js" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="todos.html" index="3">
-<position info="not_deleted" x="1902" y="0"/>
+<item historyLabel="bootstrap-tree.html" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
+<item historyLabel="bootstrap-tree2.js" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6718" y="0"/>
+<item historyLabel="bootstrap-tree.html" index="9">
+<position info="not_deleted" x="101" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="630" y="0"/>
+<item historyLabel="example.html" index="11">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7125" y="0"/>
+<item historyLabel="bootstrap-tree.html" index="9">
+<position info="not_deleted" x="101" y="0"/>
 </item>
-<item historyLabel="DFMEA.js | server" index="0">
-<position info="not_deleted" x="188" y="0"/>
+<item historyLabel="example.html" index="11">
+<position info="not_deleted" x="8956" y="0"/>
 </item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6943" y="11"/>
-</item>
-<item historyLabel="DFMEA.js | server" index="0">
-<position info="not_deleted" x="188" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6943" y="11"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6936" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6936" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="743" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="6953" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="656" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7125" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="736" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7125" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="736" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7125" y="0"/>
-</item>
-<item historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="655" y="0"/>
-</item>
-<item historyLabel="DFMEA.html" index="2">
-<position info="not_deleted" x="7125" y="0"/>
-</item>
-<item active="true" historyLabel="DFMEA.js | client" index="1">
-<position info="not_deleted" x="655" y="0"/>
+<item active="true" historyLabel="bootstrap-tree.css" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -348,9 +359,6 @@
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="left"/>
 </trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -358,12 +366,25 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="terminalArea"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@149f731"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="example.html" tooltip="bootstrap-tree/example.html">
+<persistable path="/bootstrap-tree/example.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="bootstrap-tree.html" tooltip="bootstrap-tree/bootstrap-tree.html">
+<persistable path="/bootstrap-tree/bootstrap-tree.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="bootstrap-tree.js" tooltip="bootstrap-tree/bootstrap-tree.js">
+<persistable path="/bootstrap-tree/bootstrap-tree.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="bootstrap-tree.css" tooltip="bootstrap-tree/bootstrap-tree.css">
+<persistable path="/bootstrap-tree/bootstrap-tree.css"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="DFMEA.css" tooltip="/home/twisted/meteor/DFMEA/client/stylesheets/DFMEA.css">
+<persistable uri="file:/home/twisted/meteor/DFMEA/client/stylesheets/DFMEA.css"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="leaderboard.js" tooltip="/home/twisted/meteor/leaderboard/leaderboard.js">
 <persistable uri="file:/home/twisted/meteor/leaderboard/leaderboard.js"/>
 </file>
@@ -393,21 +414,6 @@
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="bootstrap.js" tooltip="/home/twisted/meteor/todos/server/bootstrap.js">
 <persistable uri="file:/home/twisted/meteor/todos/server/bootstrap.js"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="todos.js" tooltip="/home/twisted/meteor/todos/client/todos.js">
-<persistable uri="file:/home/twisted/meteor/todos/client/todos.js"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="todos.html" tooltip="/home/twisted/meteor/todos/client/todos.html">
-<persistable uri="file:/home/twisted/meteor/todos/client/todos.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="DFMEA.html" tooltip="/home/twisted/meteor/DFMEA/client/views/DFMEA.html">
-<persistable uri="file:/home/twisted/meteor/DFMEA/client/views/DFMEA.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="DFMEA.js" tooltip="/home/twisted/meteor/DFMEA/client/DFMEA.js">
-<persistable uri="file:/home/twisted/meteor/DFMEA/client/DFMEA.js"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="DFMEA.js" tooltip="/home/twisted/meteor/DFMEA/server/DFMEA.js">
-<persistable uri="file:/home/twisted/meteor/DFMEA/server/DFMEA.js"/>
 </file>
 </mruList>
 </workbench>

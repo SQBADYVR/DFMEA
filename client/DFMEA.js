@@ -4,6 +4,21 @@
 DFMEAs = new Meteor.Collection("fmeas");
 var category_names = ['FMEA', 'Design Functions', 'Failure Modes', 'Effects', 'Causes', 'Design Controls'];
 
+$(document).ready(function() {
+	$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
+	$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
+		var children = $(this).parent('li.parent_li').find(' > ul > li');
+		if (children.is(':visible')) {
+			children.hide('fast');
+			$(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+		} else {
+			children.show('fast');
+			$(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+		}
+		e.stopPropagation();
+	});
+});
+
 Template.hello.greeting = function() {
 	return "Welcome to designCloud's DFMEA module.";
 };
@@ -26,53 +41,68 @@ Template.displayFMEA.helpers({
 	}
 });
 
-Template.displayStuff.helpers ({
-	node: function() {
-		var ID=this._id;
-		return DFMEAs.find({parent_category: ID});
-		},
-	category_class: function() {
+Template.displayStuff.helpers({
+	node : function() {
+		var ID = this._id;
+		return DFMEAs.find({
+			parent_category : ID
+		});
+	},
+	category_class : function() {
 		var ID = this.category_name;
 		switch (ID) {
 			case 'Design Functions': {
-				return "span";
+				return "Fctn";
 				break;
 			}
 			case 'Failure Modes': {
-				return "span";
+				return "FModes";
 				break;
 			}
 			case 'Effects': {
-				return "span";
+				return "Effects";
 				break;
 			}
 			case 'Causes': {
-				return "span";
+				return "Causes";
 				break;
 			}
 			case 'Design Controls': {
-				return "span";
+				return "DesCntrls";
 				break;
 			}
-			default:  return "nochoice";
-		}},
-	rating_type: function() {
+			default:
+				return null;
+		}
+	},
+	rating_type : function() {
 		var ID = this.rating_type;
 		switch (ID) {
 			case 'SEV': {
-				return "span";
+				return "SEV";
 				break;
 			}
 			case 'OCC': {
-				return "span";
+				return "OCC";
 				break;
 			}
 			case 'DET': {
-				return "span";
+				return "DET";
 				break;
 			}
-			default:  return "nochoice";
+			default:
+				return null;
 		}
+	},
+	NeedNewRow : function() {
+		var ID = this.category_name;
+		if (ID === 'Causes' || ID === 'Effects' || ID === 'Failure Modes' || ID === 'Design Functions' || 'Design Controls') {
+			return true;
+		} else {
+
+			return false;
+		}
+
 	}
 });
 
