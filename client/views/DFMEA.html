@@ -114,6 +114,7 @@
 	</div>
 
 	{{> displayFMEA}}
+	<!--
 				<ul>
 					<li>
 						<span><i class="icon-calendar"></i> Function 1</span>
@@ -175,6 +176,7 @@
 						</ul>
 					</li>
 				</ul>
+			-->
 	</body>
 
 <template name="banner">
@@ -199,27 +201,45 @@
 	<!--{{getroot}}-->
 		<div class="container-fluid" style="">
 			<div class="tree">
-				{{>displayStuff}}
+				<ul role="tree">
+					{{>displayStuff}}
+				</ul>
 			</div>
 		</div>
 </template>
 
 <template name="displayStuff">
 	{{#each node}}
-		{{#if parent_category}}
-			<ul>
-				<li>
-					<span
-					{{#if category_class}} class={{category_class}}{{/if}}>
-					<i class="icon-calendar"></i>{{content}}</span>
-		{{/if}}
-		{{#if rating_type}}
-		<span class={{rating_type}}>
-			{{rating}}
-		</span>
-		{{/if}}
 		{{#if subcategories}}
-		{{> displayStuff}}
+		<li class="parent_li" role="treeitem">
+		<span title="Collapse this branch" 
+			{{#if category_class}}
+				class={{category_class}}{{/if}}>
+			<i class="icon-calendar"></i>
+			{{#if parent_category}}
+				{{content}}</span>
+			{{/if}}
+			{{#if rating_type}}
+			<span class={{rating_type}}>
+				{{rating}}
+			</span>
+			{{/if}}
+			<ul role="group">
+					{{> displayStuff}}
+			</ul>
+		</li>
+		{{else}}
+		<li>
+			<a href="">
+				<span>
+					<i class="icon-time"></i>
+					{{content}}
+				</span>
+				{{#if rating_type}}
+				{{rating}}
+				{{/if}}
+			</a>
+		</li>
 		{{/if}}
 	{{#if parent_category}}
 	</li>
