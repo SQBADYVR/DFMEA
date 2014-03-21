@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../bootstrap-combined.min.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-		<script src="../js/bootstrap-tree.js"></script>
+		<!--<script src="../js/bootstrap-tree.js"></script>-->
 	</head>
 
 <body>
@@ -137,13 +137,42 @@
 
 <template name="displayFMEA">
 	<!--{{getroot}}-->
-		<div class="container-fluid" style="">
-			<div class="tree">
-				<ul role="tree">
-					{{>displayStuff}}
-				</ul>
-			</div>
+		<div class="container-fluid">
+				{{> displayFMEAbody}}
 		</div>
+</template>
+
+<template name="displayFMEAbody">
+	{{#each node}}
+		{{#if subcategories}}
+			<ul role={{#if parent_category}}"treeitem" class={{category_class}}{{else}}"tree"><li{{/if}}>
+			{{#if parent_category}}
+				{{> displayFMEAentry}}
+			{{/if}}	
+				{{> displayFMEAbody}}
+			{{#unless parent_category}}
+			</li>
+			{{/unless}}
+			</ul>
+		{{else}}
+			{{> displayFMEAentry}}
+		{{/if}}
+	{{/each}}	
+</template>
+
+<template name="displayFMEAentry">
+	<li class={{category_name}}+" list" role="tree item">
+		{{#if category_class}}
+			<span class={{category_class}}>{{content}}</span>
+		{{else}}
+			<span class={{cateoory_class}}>{{content}}</span>
+		{{/if}}
+		{{#if rating_type}}
+			<span class={{rating_type}}>
+				{{rating}}
+			</span>
+		{{/if}}
+	</li>
 </template>
 
 <template name="displayStuff">
