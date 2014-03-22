@@ -112,10 +112,8 @@
 			</div>
 		</div>
 	</div>
-
 	{{> displayFMEA}}
-
-	</body>
+</body>
 
 <template name="banner">
 	<div class="container">
@@ -144,39 +142,28 @@
 
 <template name="displayFMEAbody">
 	{{#each node}}
-		{{#if subcategories}}
-			{{#if parent_category}}
-				<ul role="tree item" class={{category_class}}>
-					<li class={{category_class}}>
-					{{> displayFMEAentry}}
-					<div class={{category_class}}>
-					{{> displayFMEAbody}}
+		{{#if parent_category}}
+			<div class="node-{{category_class}}">
+				<div class="content-{{category_class}}">
+				{{content}}
+				</div>
+				{{#if rating_type}}
+					<div class="children-wrapper-{{rating_type}}">
+						<div class="content-{{rating_type}}">
+						{{rating}}
+						</div>
 					</div>
-					</li>
-				</ul>
-			{{else}}
-			<ul role="tree">
+				{{/if}}
+			{{#if subcategories}}
+				<div class="children-wrapper-{{category_class}}">
 				{{> displayFMEAbody}}
-			</ul>
-			{{/if}}	
-		{{else}} <!-- slight fubar on the unordered list tag here -->
-			<li class={{category_class}}>
-			{{> displayFMEAentry}} 
-			</li>
+				</div>
+			{{/if}}
+			</div>
+		{{else}}
+			{{>displayFMEAbody}}
 		{{/if}}
 	{{/each}}	
 </template>
 
-<template name="displayFMEAentry">
-		{{#if category_class}}
-			<span class={{category_class}}>{{content}}</span>
-		{{else}}
-			<span class={{cateoory_class}}>{{content}}</span>
-		{{/if}}
-		{{#if rating_type}}
-			<span class={{rating_type}}>
-				{{rating}}
-			</span>
-		{{/if}}
-</template>
 

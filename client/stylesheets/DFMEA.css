@@ -1,90 +1,95 @@
-/* CSS declarations go here */
-span.DET {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	min-width: 20px;
-	border-radius: 5px;
+div.node-Fctn {
+	border: solid 1px #000000;
+	color: #ff0000;
+		position:relative;
 }
 
-span.OCC {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	min-width: 20px;
-}
-
-span.SEV {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	min-width: 20px;
-}
-
-span.DesCntrls {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-}
-
-span.Causes {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	border-radius: 10px;
-
-}
-
-span.Effects {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	border-radius: 10px;
-	
-}
-
-ul {list-style-type: none;
-}
-
-ul.Fctn {
-	background-color: #efefef;
-	margin: 10px;
-	border-color: "yellow";
-	border-style: solid;
-}
-
-ul.FModes{
-	background-color: #cfcfcf;
-	margin: 10px;
-	border-color: "yellow";
-	border-style: solid;
-}
-
-ul.Effects{
-	background-color: #afafaf;
-	margin: 10px;
-	border-color: "yellow";
-	border-style: solid;
-}
-
-ul.Causes{
-	background-color: #990000;
-	margin: 10px;
-	border-color: "yellow";
-	border-style: solid;
-}
-
-div.Fctn {
+div.children-wrapper-Fctn {
 	display: inline-block;
+
 }
-div.FModes {
+
+div.node-FModes {
+	border: solid 1px #000000;
+	color: #0000ff;
+		position:relative;
+}
+
+div.children-wrapper-FModes {
 	display: inline-block;
 }
 
-div.Effects {
-	display: inline-block;
+div.node-Effects {
+	border: solid 1px #000000;
+	color:  #880088;
 }
 
-div.Causes {
+div.children-wrapper-Effects {
 	display:inline-block;
+}
+
+div.node-Causes {
+	border: solid 1px #000000;
+	color: #c0c0c0;
+}
+
+div.children-wrapper-Causes {
+	display: inline-block;
+
+}
+
+div.node-DesCntrls {
+	color:  #000000;
+	border: solid 1px #000000;
+	padding-left: 2px;
+	padding-right: 2px;
+	position:relative;
+}
+
+div.content-Fctn {
+	width: 160px;
+	display: inline-block;
+}
+div.content-Causes {
+	width: 160px;
+	display: inline-block;
+
+}
+div.content-FModes {
+	width: 160px;
+	display: inline-block;
+
+}
+div.content-Effects {
+	width: 160px;
+	display: inline-block;
+}
+div.content-DesCntrls {
+	width: 250px;
+	display: inline-block;
+	color:  #000000;
+
+}
+
+div.content-SEV {
+	width: 20px;
+	display: inline-block;
+}
+div.content-OCC {
+	width: 20px;
+	display: inline-block;
+}
+div.content-DET {
+	width: 20px;
+	display: inline-block;
+}
+
+div.children-wrapper-DET {
+	display: inline-block;
+}
+div.children-wrapper-OCC {
+	display: inline-block;
+}
+div.children-wrapper-SEV {
+	display: inline-block;
 }

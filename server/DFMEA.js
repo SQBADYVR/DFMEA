@@ -46,7 +46,7 @@ Meteor.startup(function() {
 					content: "Doesn't work" + j
 				});
 				DFMEAs.update({_id: fctn_id}, {$push: {subcategories: fmode_id}});
-				for ( k = 0; k < Math.floor(Math.random() * 3) + 1; k++) {
+				for ( k = 0; k < Math.floor(Math.random() * 5) + 1; k++) {
 					var effects_id = DFMEAs.insert({
 						category_name: "Effects",
 						parent_category: fmode_id,
@@ -56,7 +56,7 @@ Meteor.startup(function() {
 						rating: Math.floor(Math.random() * 10) + 1
 					});
 					DFMEAs.update({_id: fmode_id}, {$push: {subcategories: effects_id}});
-					for ( l = 0; l < Math.floor(Math.random() * 3) + 1; l++) {
+					for ( l = 0; l < Math.floor(Math.random() * 5) + 1; l++) {
 						var cause_id = DFMEAs.insert({
 							category_name: "Causes",
 							parent_category: effects_id,
@@ -70,15 +70,16 @@ Meteor.startup(function() {
 						}, {
 							$push: {subcategories: cause_id}
 						});
-						for ( m = 0; m < Math.floor(Math.random() * 3) + 1; m++) {
+						for ( m = 0; m < 1; m++) {
 							var detec_id = DFMEAs.insert({
 								category_name: "Design Controls",
 								parent_category: cause_id,
 								subcategories: [],
-								content: "Test regimen" + m,
+								content: "Test regimen that has a long-ass list of stuff like thermal shock, shake and bake, drop testing, and other stuff" + m,
 								rating_type: "DET",
 								rating: Math.floor(Math.random() * 10) + 1
 							});
+							
 							DFMEAs.update({
 								_id: cause_id
 							}, {
