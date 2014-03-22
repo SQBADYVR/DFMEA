@@ -1,59 +1,46 @@
 /* CSS declarations go here */
-.DET {
+span.DET {
 	padding: 5px;
 	background-color: #E7E7E7;
 	border: solid 1px #616A7F;
-	width: 50px;
-	border-bottom-right-radius: 20%;
-	border-top-right-radius: 20%;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	min-width: 20px;
+	border-radius: 5px;
 }
 
-.OCC {
+span.OCC {
 	padding: 5px;
 	background-color: #E7E7E7;
 	border: solid 1px #616A7F;
-	width: 50px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	min-width: 20px;
 }
 
-.SEV {
+span.SEV {
 	padding: 5px;
 	background-color: #E7E7E7;
 	border: solid 1px #616A7F;
-	width: 50px;
+	min-width: 20px;
+}
+
+span.DesCntrls {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+}
+
+span.Causes {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	border-radius: 10px;
+
+}
+
+span.Effects {
+	padding: 5px;
+	background-color: #E7E7E7;
+	border: solid 1px #616A7F;
+	border-radius: 10px;
 	
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-.DesCntrls {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-.Causes {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	border-bottom-left-radius: 20%;
-	border-top-left-radius: 20%;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-.Effects {
-	padding: 5px;
-	background-color: #E7E7E7;
-	border: solid 1px #616A7F;
-	border-radius: 20%;
-	margin-top: 2px;
-	margin-bottom: 2px;
 }
 
 ul {list-style-type: none;
@@ -61,7 +48,6 @@ ul {list-style-type: none;
 
 ul.Fctn {
 	background-color: #efefef;
-	padding: 10px;
 	margin: 10px;
 	border-color: "yellow";
 	border-style: solid;
@@ -69,7 +55,6 @@ ul.Fctn {
 
 ul.FModes{
 	background-color: #cfcfcf;
-	padding: 10px;
 	margin: 10px;
 	border-color: "yellow";
 	border-style: solid;
@@ -77,8 +62,29 @@ ul.FModes{
 
 ul.Effects{
 	background-color: #afafaf;
-	padding: 10px;
 	margin: 10px;
 	border-color: "yellow";
 	border-style: solid;
+}
+
+ul.Causes{
+	background-color: #990000;
+	margin: 10px;
+	border-color: "yellow";
+	border-style: solid;
+}
+
+div.Fctn {
+	display: inline-block;
+}
+div.FModes {
+	display: inline-block;
+}
+
+div.Effects {
+	display: inline-block;
+}
+
+div.Causes {
+	display:inline-block;
 }
